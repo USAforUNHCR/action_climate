@@ -26,7 +26,7 @@ var questions = {
 
 'use-strict';
 
-var introText = "Make your voice heard. Share your thoughts in our poll below so that we can send a clear message that the U.S. must continue to support and welcome refugees.";
+var introText = "How well do you know the global refugee crisis and the impacts of climate change? Take this quick quiz to see.";
 var ansElement = {};
 var qElement = {};
 var thanksEl = {};
