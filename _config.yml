@@ -1,9 +1,9 @@
 # Site settings
 title: Refugee Survey
 email: 
-description: The refugee crisis is real. Nearly 60 million people have beeen forced to flee their homes worldwide. The numbers will rise. Get educated get involved and take action to help us stop the crisis.
+description: Climate change is quickly becoming a growing factor in the global refugee crisis.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://refugeesurvey.com" # the base hostname & protocol for your site
+url: "http://forcetheclimate.com" # the base hostname & protocol for your site
 
 permalink: pretty
 
@@ -22,5 +22,5 @@ assets:
     - _assets/fonts
     - _assets
 
-  js_compressor: uglifier
-  css_compressor: sass
+  # js_compressor: uglifier
+  # css_compressor: sass

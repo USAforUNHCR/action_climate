@@ -1,63 +1,140 @@
+//typefaces
+
 $title-bold: 'Oswald', sans-serif;
 $body-text: helvetica, arial, sans-serif;
 
+//colors
+
+$climate-orange-dark: #FF7E37; 
+$climate-orange-light: #FF9E20;
+
 // breakpoints
+
 $large: 1200px;
 $tablet: 900px;
 $phone:  540px;
 
 #top-headline{
   position: relative;
-  height: 30vh;
   background-color: darkblue;
   font-size: 28pt;
-  color: white;
+  height: 40vw;
+  min-height: 215px;
+  color: black;
   background-color: none;
-  background-image: url(<%= asset_path "../images/syria.jpg" %>);
-  background-attachment: fixed;
-  @media screen and (max-height: 1000px){
-    height: 400px;
+  background-image: url(<%= asset_path "../images/globe1.jpg" %>);
+  background-size: cover;
+  @media screen and (max-width: $phone){
+    // background-attachment: fixed;
+    background-position: 100% 25%;
+    background-size: 150% ;
   }
-  & h1{
-    padding: 5%;
+  & .headline-text{
+    position: relative;
+    top: 20%;
+    width: 60%;
+    margin-left: 40%;
+    text-align: center;
+    @media screen and (max-width: $tablet){
+      top: 10%;
+    }
+    @media screen and (max-width: $phone){
+      margin: auto;
+      width: 100%;
+      top: 2%;
+    }
+  }
+
+  & .demand{
+  
     font-family: $title-bold;
     font-weight: 700;
-    position:absolute;
-    top:30%;
-    left:50%;
-    -webkit-transform:translate(-50%,-30%);
-    transform:translate(-50%,-40%); 
-    margin-right: -50%;
+    margin-bottom: 0px;
+    @media screen and (max-width: $large){
+      font-size: 26pt;
+    }
+    @media screen and (max-width: $tablet){
+      font-size: 24pt;
+    }
+    @media screen and (max-width: $phone){
+      font-size: 22pt;
+    }
   }
-  @media screen and (max-width: $large){
-    font-size: 26pt;
-  }
-  @media screen and (max-width: $tablet){
-    font-size: 24pt;
-  }
-  @media screen and (max-width: $phone){
-    font-size: 22pt;
-  }
-  & h3{
-    padding: 5%;
+
+  & .too-late{
     font-family: $title-bold;
     font-weight: 700;
-    position:absolute;
-    top:80%;
-    left:50%;
-    -webkit-transform:translate(-50%,-70%);
-    transform:translate(-50%,-60%); 
-    margin-right: -50%;
-    margin-top: 5px;
+    margin-bottom: 0px;
+    @media screen and (max-width: $large){
+      font-size: 26pt;
+    }
+    @media screen and (max-width: $tablet){
+      font-size: 24pt;
+    }
+    @media screen and (max-width: $phone){
+      font-size: 22pt;
+    }
   }
-  @media screen and (max-width: $large){
-    font-size: 26pt;
+  
+  & .circle{
+    font-family: $title-bold;
+    font-weight: 700;
+    width:2em;
+    height: 2em;
+    background-color: $climate-orange-dark;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    @media screen and (max-width: $large){
+        width:1.8em;
+        height: 1.8em;
+      }
+      @media screen and (max-width: $tablet){
+        width: 1.4em;
+        height: 1.4em;
+      }
+      @media screen and (max-width: $phone){
+        width: 1em;
+        height: 1em;
+      }
+    & p{
+      position: relative;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      font-size: 28pt;
+      width: 100%;
+      margin: auto;
+      vertical-align: bottom;
+      @media screen and (max-width: $large){
+        font-size: 24pt;
+      }
+      @media screen and (max-width: $tablet){
+        font-size: 20pt;
+      }
+      @media screen and (max-width: $phone){
+        font-size: 16pt;        
+      }
+    }
   }
-  @media screen and (max-width: $tablet){
-    font-size: 24pt;
-  }
-  @media screen and (max-width: $phone){
-    font-size: 22pt;
+
+  & .climate-change{
+    text-align: center;
+    padding: 0.5%;
+    font-family: $title-bold;
+    font-weight: 700;
+    margin-bottom: 0px;
+    @media screen and (max-width: $large){
+      font-size: 32pt;
+    }
+    @media screen and (max-width: $tablet){
+      font-size: 24pt;
+    }
+    @media screen and (max-width: $phone){
+      font-size: 22pt;
+    }
   }
 }
 
@@ -65,11 +142,9 @@ $phone:  540px;
   color: white;
   font-size: 20pt;
   text-align: center;
-  background-color: #928887;
+  background-color: $climate-orange-light;
   font-family: $body-text;
   padding: 3% 5vw 3% 5vw;
-  // padding-left: 10vw;
-  // padding-right: 10vw;
   & p{
     opacity: 1;
     max-width: 970px;
@@ -247,22 +322,7 @@ ul.bxslider{
   }
 }
 
-.zip-form{
-  @media screen and (max-width: 450px){
-    width: 100%;
-  }
-  & p{
-    font-size: 14pt;
-    margin: 0px;
-  }
-  & input{
-    position: relative;
-    top: -40px;
-    @media screen and (max-width: 600px){
-      top: -5px;
-    }
-  }
-}
+
 .wrapper{
   width: 100%;
   margin: none;

@@ -1,8 +1,7 @@
 s3_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
 s3_secret: <%= ENV['S3_SECRET_KEY'] %>
-s3_bucket: refugeesurvey.com
-# s3_bucket: ref-surv-stage
+s3_bucket: forcetheclimate.com
+
 
 gzip: true
-cloudfront_distribution_id: E286H17GHP2SIX
 
