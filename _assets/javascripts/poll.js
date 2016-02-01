@@ -26,7 +26,7 @@ var questions = {
 
 'use-strict';
 
-var introText = "How well do you know the global refugee crisis and the impacts of climate change? Take this quick quiz to see.";
+var introText = "Give us your opinions on the global refugee crisis.";
 var ansElement = {};
 var qElement = {};
 var thanksEl = {};
@@ -64,7 +64,7 @@ function quiz(){
 }
 
 function quizInit(){
-  var introAnswer ="Click here to take the quiz.";
+  var introAnswer ="Click here to take the poll.";
   $('.question-text').html(introText);
   createAnswer(introAnswer,1);
 }
