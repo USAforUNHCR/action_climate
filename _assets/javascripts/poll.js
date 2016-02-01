@@ -78,7 +78,7 @@ function buttonListener(){
       answerText = getOtherText(event.target);
       nextQuestion(event,answerText);
     }
-    else if($(event.target).is('.answer-container') && $(event.target).find('.other-input').length === 0){
+    else if($(event.target).is('.answer-container') || $(event.target).is('.answer')  && $(event.target).find('.other-input').length === 0){
       answerText = getText($(event.target));
       nextQuestion(event,answerText);
     }
@@ -97,7 +97,12 @@ function getOtherText(target){
 }
 
 function getText(ansCont){
-  return ansCont.find('.answer').html();
+  if($(ansCont).find('.answer').length != 0){
+    return $(ansCont).find('.answer').html();
+  }
+  else{
+    return ansCont.filter('.answer').html();
+  }
 }
 
 

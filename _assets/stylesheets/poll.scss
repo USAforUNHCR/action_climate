@@ -1,0 +1,38 @@
+.poll-container{
+  & .answer-container{
+    min-height: 50px;
+    background-color: blue;
+    max-width: 450px;
+    & .answer{
+      background-color: blue;
+      margin: auto;
+      color: white;
+    }
+  }
+}
+
+.other-input{
+  line-height: 1rem;
+  padding-bottom: 1rem;
+  & [type="text"]{
+    width: 80%;
+    line-height: 2rem;
+    font-size: 2rem;
+    border-radius: 3px;
+  }
+  & .other-submit{
+    display: block;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+      background-color: white;
+      color: blue;
+    }
+  }
+}
